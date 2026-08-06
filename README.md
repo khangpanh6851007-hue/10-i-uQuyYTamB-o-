@@ -1,38 +1,76 @@
-# 🌟 Phật Pháp Tôn Nghiêm - Giao Diện 5.0
+<div align="center">
+  <!-- Banner động hoặc Logo đại diện -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Xin%20Chào%20Đến%20Với%20Không%20Gian%20Của%20Tôi&fontSize=26&fontColor=d9a74a&animation=fadeIn&fontAlignY=38" width="100%" />
 
-Ứng dụng web Phật giáo tĩnh tích hợp công nghệ hiện đại, được thiết kế tối ưu riêng cho các môi trường lập trình di động trên Android như **Acode**, **TrebEdit**, hoặc **TrebleShot**.
+  <p align="center">
+    <em>🚀 Lập trình viên đam mê kiến tạo các giải pháp công nghệ tối ưu, ứng dụng web hiện đại và trải nghiệm người dùng tinh tế.</em>
+  </p>
 
----
-
-## 📱 Giới Thiệu Dự Án
-
-Trang web cung cấp hệ thống giáo lý cốt lõi bao gồm **10 Điều Quy Y Tam Bảo**, **10 Điều Ngăn Cấm**, cùng tính năng độc đáo **"Phạm Luật Phạt Gấp Đôi"** kết hợp giọng đọc **Chị Google (SpeechSynthesis API)** tự động.
-
-### ⚡ Các Tính Năng 5.0 Nổi Bật:
-1. **Thiết Kế Glassmorphism:** Giao diện kính mờ sang trọng, tối ưu hiển thị tối (`dark mode`) dịu mắt.
-2. **Giọng Đọc Chị Google:** Tích hợp trình phát âm thanh văn bản trực tiếp bằng tiếng Việt (`vi-VN`) cho từng điều quy y và giới luật.
-3. **Bộ Tính Toán Nhân Quả & Phạt Gấp Đôi:** Hệ thống tự động nhân đôi hệ số nghiệp báo khi người dùng tích chọn lỗi cố ý vi phạm.
-4. **Responsive Hoàn Hảo:** Tương thích mượt mà trên mọi kích thước màn hình từ điện thoại di động đến máy tính bảng.
+  <!-- Huy hiệu nhanh -->
+  <p>
+    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&weight=600&size=18&duration=3000&pause=1000&color=D9A74A&center=true&vCenter=true&width=500&lines=Full-Stack+Developer+%7C+UI%2FUX+Enthusiast;Chuyên+xây+dựng+Web+Apps+hiệu+năng+cao;Luôn+cập+nhật+xu+hướng+công+nghệ+2026!" alt="Typing SVG" /></a>
+  </p>
+</div>
 
 ---
 
-## 🛠️ Hướng Dẫn Chạy Trên Acode / TrebEdit (Android)
+## 🛠️ Công Nghệ & Kỹ Năng Sở Trường
 
-Vì đây là một trang web thuần chạy bằng một file duy nhất (`index.html`), bạn có thể dễ dàng chạy trực tiếp trên điện thoại của mình:
+Dưới đây là các công nghệ và công cụ tôi sử dụng thường xuyên để phát triển các dự án:
 
-1. **Tạo Dự Án Mới:**
-   * Mở ứng dụng **Acode** hoặc **TrebEdit** trên điện thoại Android của bạn.
-   * Tạo một tệp mới có tên là `index.html`.
-2. **Dán Mã Nguồn:**
-   * Sao chép toàn bộ mã nguồn HTML ở trên và dán vào tệp `index.html`.
-3. **Chạy Thử Nghiệm (Preview):**
-   * Trong **Acode**: Nhấn vào nút chạy/biểu tượng Play ở góc trên màn hình để mở trình duyệt xem trước.
-   * Trong **TrebEdit**: Nhấn nút **Run** để xem trực tiếp giao diện trang web ngay trên thiết bị.
+| Hạng mục | Công nghệ cốt lõi |
+| :--- | :--- |
+| **Frontend & Mobile** | `HTML5`, `Tailwind CSS`, `JavaScript (ES6+)`, `React`, `Acode / Trebedit Ecosystem` |
+| **Backend & Cơ Sở Dữ Liệu** | `Node.js`, `Express`, `RESTful APIs`, `MongoDB`, `SQL` |
+| **Công Cụ & Môi Trường** | `Git`, `GitHub Actions`, `VS Code`, `Terminal / Linux` |
 
 ---
 
-## 📋 Cấu Trúc File
+## 📊 Thống Kê GitHub (GitHub Stats)
 
-```text
-├── index.html        # Toàn bộ mã nguồn (HTML, Tailwind CSS v3, JavaScript, FontAwesome)
-└── README.md         # Hướng dẫn sử dụng dự án
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1e293b&title_color=d9a74a&icon_color=d9a74a" alt="GitHub Stats" />
+      </td>
+      <td align="center">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true&background=1e293b&side_labels=true&stroke=d9a74a&ring=d9a74a" alt="GitHub Streak" />
+      </td>
+    </tr>
+  </table>
+
+  <!-- Ngôn ngữ sử dụng nhiều nhất -->
+  <p>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true&bg_color=1e293b&title_color=d9a74a" alt="Top Languages" />
+  </p>
+</div>
+
+---
+
+## 💡 Dự Án Tiêu Biểu
+
+*   🌟 **[Phật Pháp Tôn Nghiêm](https://github.com/YOUR_GITHUB_USERNAME/phat-phap-ton-nghiem)**: Ứng dụng web tích hợp giao diện kính mờ hiện đại, đọc văn bản tự động và hệ thống tra cứu nhân quả tối ưu.
+*   ⚡ **[Dự Án Đang Phát Triển 2026](https://github.com/YOUR_GITHUB_USERNAME)**: Khám phá các kho lưu trữ mã nguồn mở mới nhất của tôi trực tiếp trên hồ sơ GitHub.
+
+---
+
+## 🌐 Kết Nối Với Tôi
+
+<div align="center">
+  <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="mailto:email_cua_ban@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://facebook.com/YOUR_FACEBOOK" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
+  </a>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=20,11,6&height=100&section=footer" width="100%" />
+</div>
