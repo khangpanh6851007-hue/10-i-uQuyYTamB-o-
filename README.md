@@ -1,76 +1,67 @@
-<div align="center">
-  <!-- Banner động hoặc Logo đại diện -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Xin%20Chào%20Đến%20Với%20Không%20Gian%20Của%20Tôi&fontSize=26&fontColor=d9a74a&animation=fadeIn&fontAlignY=38" width="100%" />
+# Phật Pháp Tôn Nghiêm — Ultra 2026
 
-  <p align="center">
-    <em>🚀 Lập trình viên đam mê kiến tạo các giải pháp công nghệ tối ưu, ứng dụng web hiện đại và trải nghiệm người dùng tinh tế.</em>
-  </p>
+Website tĩnh tiếng Việt về học tập và thực hành Phật pháp, giao diện tối với tông vàng kim và xanh Phật giáo. Dự án được thiết kế để chạy trên GitHub Pages và trình duyệt di động.
 
-  <!-- Huy hiệu nhanh -->
-  <p>
-    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&weight=600&size=18&duration=3000&pause=1000&color=D9A74A&center=true&vCenter=true&width=500&lines=Full-Stack+Developer+%7C+UI%2FUX+Enthusiast;Chuyên+xây+dựng+Web+Apps+hiệu+năng+cao;Luôn+cập+nhật+xu+hướng+công+nghệ+2026!" alt="Typing SVG" /></a>
-  </p>
-</div>
+## Tính năng
 
----
+### Nội dung và công cụ có sẵn
+- 10 điều Quy y Tam Bảo.
+- 10 điều ngăn cấm.
+- Công cụ tính điểm nghiệp lực minh họa (không phải phép đo nghiệp quả thực tế).
+- Đọc nội dung bằng SpeechSynthesis của trình duyệt.
+- Thư viện tham khảo kinh Phật và pháp thoại.
+- Lịch tu tập 365 ngày và đánh dấu ngày thực hành.
+- Bộ đếm tụng kinh, Chú Đại Bi và Chú Vãng Sanh.
+- Nhật ký công đức và hồi hướng.
+- Thời khóa buổi sáng và buổi tối.
+- Thống kê tiến độ và xuất dữ liệu JSON.
+- Giao diện responsive cho điện thoại, máy tính bảng và máy tính.
 
-## 🛠️ Công Nghệ & Kỹ Năng Sở Trường
+## Chạy thử
 
-Dưới đây là các công nghệ và công cụ tôi sử dụng thường xuyên để phát triển các dự án:
+Mở `index.html` bằng trình duyệt hiện đại hoặc chạy máy chủ tĩnh trong thư mục dự án, ví dụ:
 
-| Hạng mục | Công nghệ cốt lõi |
-| :--- | :--- |
-| **Frontend & Mobile** | `HTML5`, `Tailwind CSS`, `JavaScript (ES6+)`, `React`, `Acode / Trebedit Ecosystem` |
-| **Backend & Cơ Sở Dữ Liệu** | `Node.js`, `Express`, `RESTful APIs`, `MongoDB`, `SQL` |
-| **Công Cụ & Môi Trường** | `Git`, `GitHub Actions`, `VS Code`, `Terminal / Linux` |
+```bash
+python -m http.server 8000
+```
 
----
+Sau đó truy cập `http://localhost:8000`.
 
-## 📊 Thống Kê GitHub (GitHub Stats)
+## Triển khai GitHub Pages
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1e293b&title_color=d9a74a&icon_color=d9a74a" alt="GitHub Stats" />
-      </td>
-      <td align="center">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true&background=1e293b&side_labels=true&stroke=d9a74a&ring=d9a74a" alt="GitHub Streak" />
-      </td>
-    </tr>
-  </table>
+1. Tạo repository trên GitHub.
+2. Đưa `index.html`, `README.md` và thư mục `.github/workflows/` lên nhánh `main`.
+3. Mở **Settings → Pages**.
+4. Trong **Build and deployment**, chọn **Deploy from a branch** nếu muốn tự cấu hình theo nhánh; hoặc để workflow GitHub Actions bên dưới triển khai tự động.
+5. Nếu dùng workflow, vào **Settings → Actions → General**, cho phép workflow có quyền đọc và ghi nếu chính sách repository yêu cầu; workflow khai báo quyền `pages: write` và `id-token: write`.
+6. Push commit lên `main`. Mở tab **Actions** để theo dõi lần triển khai.
+7. Khi hoàn tất, địa chỉ website thường có dạng `https://TEN-TAI-KHOAN.github.io/TEN-REPOSITORY/`.
 
-  <!-- Ngôn ngữ sử dụng nhiều nhất -->
-  <p>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true&bg_color=1e293b&title_color=d9a74a" alt="Top Languages" />
-  </p>
-</div>
+## Giọng đọc nam và nữ
 
----
+Trang sử dụng Web Speech API (`speechSynthesis`) có sẵn trong trình duyệt/hệ điều hành. Danh sách giọng phụ thuộc vào thiết bị và gói giọng đã cài. Bộ lọc nam/nữ chỉ suy đoán từ tên giọng vì trình duyệt không cung cấp trường giới tính chuẩn. Nếu thiết bị không có giọng tiếng Việt phù hợp, hãy cài thêm giọng đọc tiếng Việt trong cài đặt hệ điều hành hoặc thử trình duyệt khác.
 
-## 💡 Dự Án Tiêu Biểu
+Đây không phải dịch vụ tạo giọng AI đám mây; website không tải giọng đọc từ máy chủ.
 
-*   🌟 **[Phật Pháp Tôn Nghiêm](https://github.com/YOUR_GITHUB_USERNAME/phat-phap-ton-nghiem)**: Ứng dụng web tích hợp giao diện kính mờ hiện đại, đọc văn bản tự động và hệ thống tra cứu nhân quả tối ưu.
-*   ⚡ **[Dự Án Đang Phát Triển 2026](https://github.com/YOUR_GITHUB_USERNAME)**: Khám phá các kho lưu trữ mã nguồn mở mới nhất của tôi trực tiếp trên hồ sơ GitHub.
+## Lưu trữ dữ liệu
 
----
+Các bộ đếm, ngày đã đánh dấu và nhật ký được lưu bằng `localStorage` trên trình duyệt hiện tại. Dữ liệu không tự đồng bộ giữa các thiết bị hoặc trình duyệt. Dùng nút **Sao lưu dữ liệu tu tập** để xuất tệp JSON và lưu giữ bản sao.
 
-## 🌐 Kết Nối Với Tôi
+## Lưu ý nội dung
 
-<div align="center">
-  <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="mailto:email_cua_ban@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://facebook.com/YOUR_FACEBOOK" target="_blank">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
-  </a>
-</div>
+Các danh mục kinh/pháp thoại trong bản hiện tại là mục tham khảo và gợi ý chủ đề. Vui lòng đối chiếu văn bản, bản dịch và nguồn xuất bản đáng tin cậy theo truyền thống tu học của bạn. Điểm số nghiệp lực trong ứng dụng chỉ là quy ước minh họa, không đại diện cho giáo lý hay phán quyết tôn giáo.
 
----
+## Cấu trúc dự án
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=20,11,6&height=100&section=footer" width="100%" />
-</div>
+```text
+.
+├── index.html
+├── README.md
+└── .github/
+    └── workflows/
+        └── deploy.yml
+```
+
+## Giấy phép
+
+Chưa chỉ định giấy phép. Nếu muốn người khác sử dụng, sửa đổi hoặc phân phối mã nguồn, hãy bổ sung tệp `LICENSE` với giấy phép phù hợp.

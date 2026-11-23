@@ -1,46 +1,41 @@
-name: Tốc Độ Cao CI/CD Deploy 2026
+name: Deploy static site to GitHub Pages
 
 on:
   push:
-    branches: [ main, master ]
+    branches: ["main"]
   workflow_dispatch:
 
-# Tự động hủy các bản build cũ đang chạy khi có commit mới push lên
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: "pages"
   cancel-in-progress: true
 
 jobs:
-  deploy-sieu-toc:
-    name: Build & Deploy Siêu Tốc
+  build:
     runs-on: ubuntu-latest
-    
     steps:
-      # 1. Checkout mã nguồn tối ưu (chỉ lấy commit mới nhất để tiết kiệm thời gian)
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          fetch-depth: 1
+          path: "."
 
-      # 2. Thiết lập môi trường Node.js kèm bộ nhớ đệm (Cache) thông minh
-      - name: Setup Node.js & Cache
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      # 3. Cài đặt dependencies siêu tốc bằng lệnh ci (Clean Install)
-      - name: Install Dependencies
-        run: npm ci
-
-      # 4. Build dự án (Ví dụ: Vite / Next.js / React)
-      - name: Build Project
-        run: npm run build
-
-      # 5. Deploy lên GitHub Pages hoặc Server (Ví dụ minh họa Deploy qua FTP/SSH hoặc gh-pages)
-      - name: Deploy to Production
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # Thay đổi thư mục build tùy dự án (ví dụ: build, dist, public)
-          keep_files: false
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

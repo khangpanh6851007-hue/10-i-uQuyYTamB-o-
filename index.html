@@ -50,6 +50,21 @@
         ::-webkit-scrollbar-track { background: #0f172a; }
         ::-webkit-scrollbar-thumb { background: #b8862b; border-radius: 4px; }
     </style>
+
+<style>
+:root{color-scheme:dark;scroll-behavior:smooth}
+body{background-image:radial-gradient(ellipse at 15% 5%,rgba(16,185,129,.13),transparent 35%),radial-gradient(ellipse at 85% 20%,rgba(217,167,74,.12),transparent 32%)}
+.ultra-hero{background:linear-gradient(135deg,rgba(15,23,42,.96),rgba(6,78,59,.62));border:1px solid rgba(217,167,74,.35);box-shadow:0 20px 70px rgba(0,0,0,.28),inset 0 0 45px rgba(217,167,74,.06)}
+.gold-text{background:linear-gradient(90deg,#fef3c7,#d9a74a,#fef3c7);-webkit-background-clip:text;background-clip:text;color:transparent}
+.feature-card{background:linear-gradient(145deg,rgba(30,41,59,.88),rgba(6,78,59,.24));border:1px solid rgba(217,167,74,.2);border-radius:1.25rem;padding:1.15rem;transition:.25s}
+.feature-card:hover{transform:translateY(-3px);border-color:rgba(217,167,74,.65);box-shadow:0 12px 32px rgba(217,167,74,.09)}
+.field{width:100%;background:#0f172a;border:1px solid rgba(217,167,74,.3);border-radius:.8rem;padding:.7rem .85rem;color:#f8fafc}
+.action{background:linear-gradient(90deg,#b8862b,#e6c36a);color:#102018;font-weight:700;border-radius:.8rem;padding:.65rem 1rem}
+.action:active{transform:scale(.98)}
+.progress{height:9px;border-radius:99px;background:#1e293b;overflow:hidden}.progress>span{display:block;height:100%;background:linear-gradient(90deg,#059669,#e6c36a);border-radius:99px}
+@media(max-width:640px){header .max-w-7xl{height:auto;min-height:5rem;padding-top:.6rem;padding-bottom:.6rem;gap:.5rem;flex-wrap:wrap}header .max-w-7xl>div:last-child{width:100%;justify-content:space-between}header button{padding:.55rem .7rem!important;font-size:.75rem!important}main{padding-top:1.5rem!important}.ultra-hero{padding:1.2rem!important}}
+</style>
+
 </head>
 <body class="bg-zen-900 text-slate-100 min-h-screen selection:bg-gold-500 selection:text-zen-900 relative overflow-x-hidden">
 
@@ -166,6 +181,105 @@
                 <div id="penaltyResult" class="hidden p-4 rounded-xl bg-red-950/40 border border-red-500/30 text-red-200 text-sm space-y-2">
                     <!-- Kết quả hiển thị ở đây -->
                 </div>
+            </div>
+        </section>
+
+
+        <!-- PHIÊN BẢN ULTRA 2026: CÁC CÔNG CỤ TU HỌC BỔ SUNG -->
+        <section class="ultra-hero rounded-3xl p-6 sm:p-9 space-y-5">
+            <div class="text-center space-y-2">
+                <span class="text-xs tracking-[.25em] text-emerald-300">PHIÊN BẢN MỞ RỘNG 2026</span>
+                <h3 class="font-heading text-3xl sm:text-4xl font-bold gold-text">Hành Trình Tu Học & Tích Lũy Công Đức</h3>
+                <p class="text-slate-300 max-w-2xl mx-auto">Không gian thực hành hằng ngày với thư viện tham khảo, thời khóa, bộ đếm và nhật ký cá nhân. Nội dung mang tính hỗ trợ tu học, không thay thế hướng dẫn của vị thầy hoặc truyền thống tu tập.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
+                <div class="feature-card"><div class="text-2xl">📿</div><div class="text-2xl font-bold text-gold-300" id="statSessions">0</div><div class="text-xs text-slate-400">Lượt thực hành</div></div>
+                <div class="feature-card"><div class="text-2xl">🙏</div><div class="text-2xl font-bold text-gold-300" id="statMerit">0</div><div class="text-xs text-slate-400">Điểm ghi nhận</div></div>
+                <div class="feature-card"><div class="text-2xl">📅</div><div class="text-2xl font-bold text-gold-300" id="statDays">1/365</div><div class="text-xs text-slate-400">Ngày tu học</div></div>
+                <div class="feature-card"><div class="text-2xl">📝</div><div class="text-2xl font-bold text-gold-300" id="statNotes">0</div><div class="text-xs text-slate-400">Nhật ký</div></div>
+            </div>
+        </section>
+
+        <section class="space-y-6" id="newFeatures">
+            <div class="border-b border-gold-500/20 pb-4">
+                <h3 class="font-heading text-2xl font-bold text-gold-400">18 Tính Năng Phật Giáo Mới</h3>
+                <p class="text-sm text-slate-400">Các công cụ hỗ trợ học tập và duy trì thời khóa.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <article class="feature-card"><div class="text-2xl mb-2">📖</div><h4 class="font-bold text-gold-300">1. Thư viện kinh Phật</h4><p class="text-sm text-slate-300 mt-1">Danh mục kinh văn tham khảo, ghi chú nguồn và truyền thống.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">🎧</div><h4 class="font-bold text-gold-300">2. Thư viện pháp thoại</h4><p class="text-sm text-slate-300 mt-1">Lưu tiêu đề, đường dẫn bài giảng và ghi chú nghe pháp.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">🗓️</div><h4 class="font-bold text-gold-300">3. Lịch tu tập 365 ngày</h4><p class="text-sm text-slate-300 mt-1">Theo dõi ngày thực hành và mục tiêu từng ngày.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">📿</div><h4 class="font-bold text-gold-300">4. Bộ đếm tụng kinh</h4><p class="text-sm text-slate-300 mt-1">Ghi số lượt tụng và lưu tiến độ trên thiết bị.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">🙏</div><h4 class="font-bold text-gold-300">5. Bộ đếm Chú Đại Bi</h4><p class="text-sm text-slate-300 mt-1">Bộ đếm riêng, có thể đặt mục tiêu cá nhân.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">🕊️</div><h4 class="font-bold text-gold-300">6. Bộ đếm Chú Vãng Sanh</h4><p class="text-sm text-slate-300 mt-1">Theo dõi số biến đã thực hành.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">📔</div><h4 class="font-bold text-gold-300">7. Nhật ký công đức</h4><p class="text-sm text-slate-300 mt-1">Ghi việc thiện, ngày thực hiện và cảm nhận.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">🌼</div><h4 class="font-bold text-gold-300">8. Nhật ký hồi hướng</h4><p class="text-sm text-slate-300 mt-1">Lưu lời phát nguyện và nội dung hồi hướng.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">🔊</div><h4 class="font-bold text-gold-300">9. AI đọc bài viết</h4><p class="text-sm text-slate-300 mt-1">Dùng giọng đọc tiếng Việt có sẵn trong trình duyệt.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">☀️</div><h4 class="font-bold text-gold-300">10. Thời khóa buổi sáng</h4><p class="text-sm text-slate-300 mt-1">Checklist thực hành buổi sáng.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">🌙</div><h4 class="font-bold text-gold-300">11. Thời khóa buổi tối</h4><p class="text-sm text-slate-300 mt-1">Checklist sám hối, tĩnh tâm và hồi hướng.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">🧘</div><h4 class="font-bold text-gold-300">12. Đồng hồ thiền</h4><p class="text-sm text-slate-300 mt-1">Hẹn giờ tĩnh tâm với chuông kết thúc tùy chọn.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">🎯</div><h4 class="font-bold text-gold-300">13. Mục tiêu tu học</h4><p class="text-sm text-slate-300 mt-1">Đặt mục tiêu tụng đọc và thực hành.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">🏅</div><h4 class="font-bold text-gold-300">14. Huy hiệu tinh tấn</h4><p class="text-sm text-slate-300 mt-1">Ghi nhận các mốc hoàn thành do bạn đặt ra.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">💝</div><h4 class="font-bold text-gold-300">15. Góc công quả</h4><p class="text-sm text-slate-300 mt-1">Lưu hoạt động phụng sự và giúp đỡ cộng đồng.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">🔎</div><h4 class="font-bold text-gold-300">16. Tra cứu giáo lý</h4><p class="text-sm text-slate-300 mt-1">Tìm kiếm nội dung trong các mục trên trang.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">📊</div><h4 class="font-bold text-gold-300">17. Thống kê tu tập</h4><p class="text-sm text-slate-300 mt-1">Tổng hợp lượt đếm và nhật ký đã lưu.</p></article>
+                <article class="feature-card"><div class="text-2xl mb-2">💾</div><h4 class="font-bold text-gold-300">18. Sao lưu dữ liệu</h4><p class="text-sm text-slate-300 mt-1">Xuất dữ liệu cá nhân thành tệp JSON.</p></article>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="glass-panel rounded-3xl p-6 space-y-4">
+                <h3 class="font-heading text-xl font-bold text-gold-400">📚 Thư Viện Kinh Phật & Pháp Thoại</h3>
+                <input id="librarySearch" class="field" placeholder="Tìm kinh, chủ đề hoặc pháp thoại..." oninput="renderLibrary()">
+                <div id="libraryList" class="space-y-3"></div>
+                <p class="text-xs text-slate-500">Danh mục gợi ý để tra cứu. Hãy đối chiếu bản dịch, nguồn xuất bản và hướng dẫn của truyền thống bạn theo học.</p>
+            </div>
+            <div class="glass-panel rounded-3xl p-6 space-y-4">
+                <h3 class="font-heading text-xl font-bold text-gold-400">🗓️ Lịch Tu Tập 365 Ngày</h3>
+                <div class="flex items-center justify-between"><span class="text-sm text-slate-300">Tiến độ năm</span><strong id="yearProgress" class="text-gold-300">0/365 ngày</strong></div>
+                <div class="progress"><span id="yearProgressBar" style="width:0%"></span></div>
+                <p id="dailyPractice" class="text-sm text-slate-300">Hôm nay: dành ít phút tĩnh tâm, đọc một đoạn kinh và làm một việc thiện.</p>
+                <button class="action w-full" onclick="completePracticeDay()">Đánh dấu hôm nay đã tu tập</button>
+                <div id="practiceCalendar" class="grid grid-cols-7 gap-1 text-center text-xs"></div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="glass-panel rounded-3xl p-6 space-y-4">
+                <h3 class="font-heading text-xl font-bold text-gold-400">📿 Bộ Đếm Thực Hành</h3>
+                <div id="counterList" class="space-y-3"></div>
+                <p class="text-xs text-slate-500">Bộ đếm chỉ ghi nhận số lần bạn tự nhập; không xác minh việc thực hành.</p>
+            </div>
+            <div class="glass-panel rounded-3xl p-6 space-y-4">
+                <h3 class="font-heading text-xl font-bold text-gold-400">🔊 AI Đọc Bài Viết Tiếng Việt</h3>
+                <textarea id="readerText" class="field min-h-36" placeholder="Nhập hoặc dán bài viết cần đọc..."></textarea>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <select id="voiceGender" class="field" aria-label="Lọc giọng đọc" onchange="loadVoices()">
+                        <option value="all">Tất cả giọng</option>
+                        <option value="female">Ưu tiên giọng nữ</option>
+                        <option value="male">Ưu tiên giọng nam</option>
+                    </select>
+                    <select id="voiceChoice" class="field" aria-label="Chọn giọng đọc"><option value="">Giọng mặc định</option></select>
+                    <select id="voiceRate" class="field" aria-label="Tốc độ đọc"><option value="0.8">Rất chậm</option><option value="0.9">Chậm</option><option value="1" selected>Bình thường</option><option value="1.1">Nhanh</option><option value="1.2">Rất nhanh</option></select>
+                </div>
+                <div class="flex flex-wrap gap-2"><button class="action" onclick="readArticle()">▶ Đọc bài</button><button class="action" onclick="previewSelectedVoice()">🎙 Nghe thử giọng</button><button class="action" onclick="pauseArticle()">Tạm dừng</button><button class="action" onclick="stopArticle()">Dừng</button></div>
+                <p id="readerStatus" class="text-xs text-slate-400">Chọn nhiều giọng tiếng Việt nam/nữ nếu thiết bị đã cài; giọng được cung cấp bởi hệ điều hành/trình duyệt, không phải giọng AI đám mây.</p>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="glass-panel rounded-3xl p-6 space-y-4">
+                <h3 class="font-heading text-xl font-bold text-gold-400">📔 Nhật Ký Công Đức & Hồi Hướng</h3>
+                <input id="meritTitle" class="field" placeholder="Việc thiện / nội dung thực hành">
+                <textarea id="meritNote" class="field" rows="3" placeholder="Ghi chú, cảm nhận hoặc lời hồi hướng..."></textarea>
+                <button class="action w-full" onclick="saveMerit()">Lưu nhật ký</button>
+                <div id="meritEntries" class="space-y-2 max-h-72 overflow-auto"></div>
+            </div>
+            <div class="glass-panel rounded-3xl p-6 space-y-4">
+                <h3 class="font-heading text-xl font-bold text-gold-400">☀️ Thời Khóa Sáng & Tối</h3>
+                <div><h4 class="font-semibold text-emerald-300 mb-2">Buổi sáng</h4><div id="morningTasks" class="space-y-2"></div></div>
+                <div><h4 class="font-semibold text-emerald-300 mb-2">Buổi tối</h4><div id="eveningTasks" class="space-y-2"></div></div>
+                <button class="action" onclick="exportPracticeData()">⬇ Sao lưu dữ liệu tu tập</button>
             </div>
         </section>
 
@@ -287,6 +401,148 @@
 
             resultDiv.classList.remove('hidden');
         }
+
+
+        // Các công cụ mở rộng 2026. Dữ liệu lưu cục bộ trên trình duyệt hiện tại.
+        const STORE_KEY = 'phat-phap-ton-nghiem-ultra-2026';
+        const defaultState = {counters:{'Tụng kinh':0,'Chú Đại Bi':0,'Chú Vãng Sanh':0},days:[],entries:[],morning:[],evening:[]};
+        let appState = loadAppState();
+        function loadAppState(){try{return {...defaultState,...JSON.parse(localStorage.getItem(STORE_KEY)||'{}')};}catch(e){return {...defaultState};}}
+        function saveAppState(){localStorage.setItem(STORE_KEY,JSON.stringify(appState));updateDashboard();}
+        function updateDashboard(){
+            document.getElementById('statSessions').textContent=Object.values(appState.counters).reduce((a,b)=>a+b,0);
+            document.getElementById('statMerit').textContent=appState.entries.length;
+            document.getElementById('statDays').textContent=Math.min(365,appState.days.length)+'/365';
+            document.getElementById('statNotes').textContent=appState.entries.length;
+            document.getElementById('yearProgress').textContent=Math.min(365,appState.days.length)+'/365 ngày';
+            document.getElementById('yearProgressBar').style.width=(Math.min(365,appState.days.length)/365*100)+'%';
+        }
+        const libraryItems = [
+            {type:'Kinh tham khảo',title:'Kinh Pháp Cú',desc:'Các bài kệ ngắn về lời Phật dạy và thực hành đời sống.'},
+            {type:'Kinh tham khảo',title:'Kinh Từ Bi (Metta Sutta)',desc:'Chủ đề nuôi dưỡng tâm từ và thiện ý.'},
+            {type:'Kinh tham khảo',title:'Kinh Chuyển Pháp Luân',desc:'Bài kinh trình bày giáo pháp căn bản về con đường tu tập.'},
+            {type:'Kinh tham khảo',title:'Kinh Người Áo Trắng',desc:'Các lời dạy dành cho người cư sĩ tại gia.'},
+            {type:'Pháp thoại',title:'Chánh niệm trong đời sống',desc:'Gợi ý chủ đề nghe và ghi chú pháp thoại.'},
+            {type:'Pháp thoại',title:'Tâm từ và hạnh bố thí',desc:'Gợi ý chủ đề quán chiếu và thực hành.'}
+        ];
+        function renderLibrary(){
+            const q=(document.getElementById('librarySearch')?.value||'').toLowerCase();
+            const list=libraryItems.filter(x=>(x.title+x.desc+x.type).toLowerCase().includes(q));
+            document.getElementById('libraryList').innerHTML=list.map(x=>`<div class="feature-card"><span class="text-xs text-emerald-300">${x.type}</span><h4 class="font-bold text-gold-300">${x.title}</h4><p class="text-sm text-slate-300">${x.desc}</p></div>`).join('')||'<p class="text-sm text-slate-400">Không tìm thấy mục phù hợp.</p>';
+        }
+        function renderCounters(){
+            document.getElementById('counterList').innerHTML=Object.entries(appState.counters).map(([name,count],i)=>`<div class="feature-card flex items-center justify-between gap-3"><div><div class="font-semibold text-slate-100">${name}</div><div class="text-2xl text-gold-300 font-bold" id="count${i}">${count}</div></div><div class="flex gap-2"><button class="action" onclick="changeCounter('${name}',-1)">−</button><button class="action" onclick="changeCounter('${name}',1)">+</button></div></div>`).join('');
+        }
+        function changeCounter(name,delta){appState.counters[name]=Math.max(0,(appState.counters[name]||0)+delta);saveAppState();renderCounters();}
+        function completePracticeDay(){
+            const today=new Date().toISOString().slice(0,10);
+            if(!appState.days.includes(today))appState.days.push(today);
+            saveAppState();renderCalendar();
+            document.getElementById('dailyPractice').textContent='Đã ghi nhận ngày '+today+'. Nguyện duy trì sự tinh tấn và tâm lành.';
+        }
+        function renderCalendar(){
+            const today=new Date(), year=today.getFullYear(), start=new Date(year,0,1), dayOfYear=Math.floor((today-start)/86400000)+1;
+            const done=new Set(appState.days);
+            document.getElementById('practiceCalendar').innerHTML=Array.from({length:35},(_,i)=>{const d=i+1;return `<div class="rounded p-2 ${done.has(year+'-'+String(Math.ceil(d/31)).padStart(2,'0')+'-'+String((d-1)%31+1).padStart(2,'0'))?'bg-emerald-700':'bg-slate-800'}">${d}</div>`}).join('');
+            document.getElementById('dailyPractice').textContent=`Hôm nay là ngày thứ ${dayOfYear} trong năm. Hãy chọn một việc thực hành phù hợp.`;
+        }
+        function saveMerit(){
+            const title=document.getElementById('meritTitle').value.trim(), note=document.getElementById('meritNote').value.trim();
+            if(!title&&!note){alert('Vui lòng nhập nội dung nhật ký.');return;}
+            appState.entries.unshift({date:new Date().toLocaleString('vi-VN'),title,note});
+            document.getElementById('meritTitle').value='';document.getElementById('meritNote').value='';
+            saveAppState();renderEntries();
+        }
+        function renderEntries(){
+            document.getElementById('meritEntries').innerHTML=appState.entries.map((e,i)=>`<div class="feature-card"><div class="text-xs text-emerald-300">${e.date}</div><div class="font-semibold text-gold-300">${escapeHTML(e.title)}</div><p class="text-sm text-slate-300">${escapeHTML(e.note)}</p><button class="text-xs text-red-300 mt-2" onclick="deleteEntry(${i})">Xóa mục này</button></div>`).join('')||'<p class="text-sm text-slate-500">Chưa có nhật ký.</p>';
+        }
+        function escapeHTML(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+        function deleteEntry(i){appState.entries.splice(i,1);saveAppState();renderEntries();}
+        const morningDefaults=['Tĩnh tâm và phát nguyện','Đọc kinh hoặc học giáo lý','Thực hiện một việc thiện'];
+        const eveningDefaults=['Nhìn lại việc làm trong ngày','Sám hối và điều chỉnh','Hồi hướng công đức'];
+        function renderTasks(id,items,key){
+            const target=document.getElementById(id);
+            target.innerHTML=items.map((t,i)=>`<label class="flex items-center gap-2 text-sm text-slate-300"><input type="checkbox" ${appState[key].includes(i)?'checked':''} onchange="toggleTask('${key}',${i},this.checked)"> ${t}</label>`).join('');
+        }
+        function toggleTask(key,i,checked){appState[key]=appState[key]||[];appState[key]=checked?[...new Set([...appState[key],i])]:appState[key].filter(x=>x!==i);saveAppState();}
+        function exportPracticeData(){
+            const blob=new Blob([JSON.stringify(appState,null,2)],{type:'application/json'});
+            const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='nhat-ky-tu-hoc-2026.json';a.click();URL.revokeObjectURL(url);
+        }
+        let articleUtterance=null;
+        function guessVoiceGender(voice){
+            // Trình duyệt không cung cấp trường giới tính chuẩn; đây chỉ là phỏng đoán từ tên giọng.
+            const n=(voice.name+' '+voice.voiceURI).toLowerCase();
+            if(/female|woman|girl|hoai.?my|linh|mai|an.?female|nữ/.test(n))return 'female';
+            if(/male|man|boy|nam|minh|an.?male|male.?voice/.test(n))return 'male';
+            return 'unknown';
+        }
+        function loadVoices(){
+            if(!('speechSynthesis'in window))return;
+            const voices=speechSynthesis.getVoices();
+            const select=document.getElementById('voiceChoice');
+            const previous=select.value;
+            const filter=document.getElementById('voiceGender')?.value||'all';
+            const vi=voices.filter(v=>v.lang.toLowerCase().startsWith('vi'));
+            const filtered=filter==='all'?vi:vi.filter(v=>guessVoiceGender(v)===filter);
+            select.innerHTML='';
+            const fallback=document.createElement('option');
+            fallback.value='';
+            fallback.textContent='Giọng mặc định của thiết bị';
+            select.appendChild(fallback);
+            filtered.forEach(v=>{
+                const o=document.createElement('option');
+                o.value=v.name;
+                const gender=guessVoiceGender(v);
+                const label=gender==='female'?'Nữ (ước đoán)':gender==='male'?'Nam (ước đoán)':'Chưa xác định';
+                o.textContent=label+' • '+v.name+' • '+v.lang;
+                select.appendChild(o);
+            });
+            if([...select.options].some(o=>o.value===previous))select.value=previous;
+            const status=document.getElementById('readerStatus');
+            if(status){
+                if(!vi.length)status.textContent='Thiết bị chưa cung cấp giọng tiếng Việt. Hãy cài thêm giọng đọc Tiếng Việt trong cài đặt hệ thống hoặc dùng trình duyệt khác.';
+                else if(filter!=='all'&&!filtered.length)status.textContent='Không tìm thấy giọng được nhận diện là '+(filter==='female'?'nữ':'nam')+'. Chọn “Tất cả giọng” để xem mọi giọng tiếng Việt.';
+                else status.textContent='Có '+vi.length+' giọng tiếng Việt trên thiết bị; nhãn nam/nữ chỉ là phỏng đoán theo tên giọng. Chất lượng tùy hệ điều hành và trình duyệt.';
+            }
+        }
+        function previewSelectedVoice(){
+            if(!('speechSynthesis'in window)){alert('Trình duyệt chưa hỗ trợ đọc văn bản.');return;}
+            speechSynthesis.cancel();
+            const u=new SpeechSynthesisUtterance('Nam mô Bổn Sư Thích Ca Mâu Ni Phật. Kính chúc quý vị thân tâm an lạc.');
+            u.lang='vi-VN';u.rate=Number(document.getElementById('voiceRate').value);
+            const selected=document.getElementById('voiceChoice').value;
+            const voice=speechSynthesis.getVoices().find(v=>v.name===selected);
+            if(voice)u.voice=voice;
+            speechSynthesis.speak(u);
+            document.getElementById('readerStatus').textContent='Đang phát thử giọng đọc đã chọn.';
+        }
+        function readArticle(){
+            const text=document.getElementById('readerText').value.trim();
+            if(!text){alert('Vui lòng nhập bài viết cần đọc.');return;}
+            if(!('speechSynthesis'in window)){alert('Trình duyệt này chưa hỗ trợ đọc văn bản.');return;}
+            stopArticle();articleUtterance=new SpeechSynthesisUtterance(text);articleUtterance.lang='vi-VN';
+            articleUtterance.rate=Number(document.getElementById('voiceRate').value);
+            const name=document.getElementById('voiceChoice').value;
+            const voice=speechSynthesis.getVoices().find(v=>v.name===name);if(voice)articleUtterance.voice=voice;
+            articleUtterance.onend=()=>document.getElementById('readerStatus').textContent='Đã đọc xong bài viết.';
+            document.getElementById('readerStatus').textContent='Đang đọc...';speechSynthesis.speak(articleUtterance);
+        }
+        function pauseArticle(){if('speechSynthesis'in window)speechSynthesis.pause();document.getElementById('readerStatus').textContent='Đã tạm dừng.';}
+        function stopArticle(){if('speechSynthesis'in window)speechSynthesis.cancel();document.getElementById('readerStatus').textContent='Đã dừng đọc.';}
+        // Mở rộng cách tính cũ: điểm chỉ là chỉ số tự phản tỉnh, không phải phán quyết hay giáo lý.
+        const oldCalculatePenalty=calculatePenalty;
+        calculatePenalty=function(){
+            oldCalculatePenalty();
+            const note=document.createElement('p');note.className='text-xs text-slate-400 italic';
+            note.textContent='Lưu ý: Điểm số là quy ước minh họa của ứng dụng, không đo lường nghiệp quả thực tế và không đại diện cho phán quyết tôn giáo.';
+            document.getElementById('penaltyResult').appendChild(note);
+        };
+        document.addEventListener('DOMContentLoaded',()=>{
+            renderLibrary();renderCounters();renderEntries();renderCalendar();updateDashboard();
+            renderTasks('morningTasks',morningDefaults,'morning');renderTasks('eveningTasks',eveningDefaults,'evening');
+            loadVoices();if('speechSynthesis'in window)speechSynthesis.onvoiceschanged=loadVoices;
+        });
 
         // Khởi chạy khi tải trang
         window.onload = renderContent;
